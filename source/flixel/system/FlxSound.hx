@@ -20,7 +20,7 @@ import flash.utils.ByteArray;
 #if (openfl >= "8.0.0")
 import openfl.utils.AssetType;
 #end
-
+	
 /**
  * This is the universal flixel sound object, used for streaming, music, and sound effects.
  */
@@ -364,7 +364,7 @@ class FlxSound extends FlxBasic
 	}
 
 	/**
-	 * One of the main setup functions for sounds, this function loads a sound from a URL.
+	 * One of the primary setup functions for sound, this function loads one via a URL
 	 *
 	 * @param	SoundURL		A string representing the URL of the MP3 file you want to play.
 	 * @param	Looped			Whether or not this sound should loop endlessly.
@@ -628,7 +628,7 @@ class FlxSound extends FlxBasic
 	}
 
 	/**
-	 * An internal helper function used to help Flash
+	 * An internal helper function used to help Flash clean up finished sounds or restart looped sounds.
 	 * clean up finished sounds or restart looped sounds.
 	 */
 	function stopped(?_):Void
